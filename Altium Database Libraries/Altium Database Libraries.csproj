@@ -65,6 +65,7 @@
     <Compile Include="Control\Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
+    <Compile Include="Lib\DataList.cs" />
     <Compile Include="Lib\ExcelData.cs" />
     <Compile Include="Lib\HTMLData.cs" />
     <Compile Include="Lib\SQLData.cs" />

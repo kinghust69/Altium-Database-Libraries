@@ -9,3 +9,14 @@ c:\users\vuhua\onedrive\documents\visual studio 2015\Projects\Altium Database Li
 c:\users\vuhua\onedrive\documents\visual studio 2015\Projects\Altium Database Libraries\Altium Database Libraries\obj\Debug\Altium Database Libraries.exe
 c:\users\vuhua\onedrive\documents\visual studio 2015\Projects\Altium Database Libraries\Altium Database Libraries\obj\Debug\Altium Database Libraries.pdb
 c:\users\vuhua\onedrive\documents\visual studio 2015\Projects\Altium Database Libraries\Altium Database Libraries\obj\Debug\Altium_Database_Libraries.AltiumDB.resources
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\bin\Debug\Altium Database Libraries.exe.config
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\obj\Debug\Altium Database Libraries.exe
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\obj\Debug\Altium Database Libraries.pdb
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\bin\Debug\Altium Database Libraries.exe
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\bin\Debug\Altium Database Libraries.pdb
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\bin\Debug\System.Data.SQLite.dll
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\bin\Debug\System.Data.SQLite.Linq.dll
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\bin\Debug\System.Data.SQLite.xml
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\obj\Debug\Altium_Database_Libraries.AltiumDB.resources
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\obj\Debug\Altium_Database_Libraries.Properties.Resources.resources
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\obj\Debug\Altium Database Libraries.csproj.GenerateResource.Cache
