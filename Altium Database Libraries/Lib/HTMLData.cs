@@ -8,7 +8,7 @@ using System.Text.RegularExpressions;
 
 namespace Altium_Database_Libraries.Lib
 {
-    class HTMLData
+    public class HTMLData
     {
         public string GetHtml(string url)
         {
@@ -18,6 +18,8 @@ namespace Altium_Database_Libraries.Lib
             {
                 return result;
             }
+            ServicePointManager.MaxServicePointIdleTime = 1000;
+            ServicePointManager.SecurityProtocol = SecurityProtocolType.Tls12;
             HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
             req.AutomaticDecompression = DecompressionMethods.GZip;
             using (HttpWebResponse res = (HttpWebResponse)req.GetResponse())

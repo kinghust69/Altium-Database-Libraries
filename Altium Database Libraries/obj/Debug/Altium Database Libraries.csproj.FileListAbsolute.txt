@@ -20,3 +20,14 @@ C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Databa
 C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\obj\Debug\Altium_Database_Libraries.AltiumDB.resources
 C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\obj\Debug\Altium_Database_Libraries.Properties.Resources.resources
 C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\obj\Debug\Altium Database Libraries.csproj.GenerateResource.Cache
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\bin\Debug\Altium Database Libraries.exe.config
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\obj\Debug\Altium Database Libraries.exe
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\obj\Debug\Altium Database Libraries.pdb
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\bin\Debug\Altium Database Libraries.exe
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\bin\Debug\Altium Database Libraries.pdb
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\bin\Debug\System.Data.SQLite.dll
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\bin\Debug\System.Data.SQLite.Linq.dll
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\bin\Debug\System.Data.SQLite.xml
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\obj\Debug\Altium_Database_Libraries.AltiumDB.resources
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\obj\Debug\Altium_Database_Libraries.Properties.Resources.resources
+E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\obj\Debug\Altium Database Libraries.csproj.GenerateResource.Cache

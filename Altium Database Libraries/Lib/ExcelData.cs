@@ -5,7 +5,7 @@ using System.Text;
 
 namespace Altium_Database_Libraries.Lib
 {
-    class ExcelData
+    public class ExcelData
     {
     }
 }
