@@ -31,3 +31,4 @@ E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\bin\Debug\System.Data.S
 E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\obj\Debug\Altium_Database_Libraries.AltiumDB.resources
 E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\obj\Debug\Altium_Database_Libraries.Properties.Resources.resources
 E:\Code\Visual Studio\AltiumDB\Altium Database Libraries\obj\Debug\Altium Database Libraries.csproj.GenerateResource.Cache
+C:\Users\vuhua\OneDrive\Documents\GitHub\Altium-Database-Libraries\Altium Database Libraries\obj\Debug\Altium Database Libraries.csprojResolveAssemblyReference.cache

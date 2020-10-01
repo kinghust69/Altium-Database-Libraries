@@ -14,7 +14,7 @@ namespace Altium_Database_Libraries.Lib
         {
             string result = String.Empty;
             url = url.Trim();
-            if(url.IndexOf("http") == -1)
+            if(url.IndexOf("http") == -1 || url == string.Empty)
             {
                 return result;
             }
@@ -27,7 +27,10 @@ namespace Altium_Database_Libraries.Lib
             using (StreamReader reader = new StreamReader(stream))
             {
                 result = reader.ReadToEnd();
-            }    
+            }
+            result = result.Replace("\n", String.Empty); // remove CR
+            result = result.Replace("\r", String.Empty); // remove LF
+            result = result.Replace("  ", String.Empty); // remove double space 
             return result;
         }
 
@@ -41,11 +44,19 @@ namespace Altium_Database_Libraries.Lib
 
         public List<string> GetData(string data, string startData, string endData)
         {
+            
             List<string> result = new List<string>();
-            MatchCollection match = Regex.Matches(data, startData + "(?<Data>.*?)" + endData);
-            foreach(Match item in match)
+            if (data != string.Empty)
             {
-                result.Add(item.Groups["Data"].Value.ToString());
+                MatchCollection match = Regex.Matches(data, startData + "(?<Data>.*?)" + endData);
+                foreach (Match item in match)
+                {
+                    result.Add(item.Groups["Data"].Value.ToString());
+                }
+            }
+            if (result.Count == 0)
+            {
+                result.Add("<Not Found>");
             }
             return result;
         }

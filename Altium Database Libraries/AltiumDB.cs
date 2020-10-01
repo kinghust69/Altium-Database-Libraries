@@ -34,17 +34,27 @@ namespace Altium_Database_Libraries
         private void button1_Click(object sender, EventArgs e)
         {
             HTMLData htmlTool = new HTMLData();
-            richTextBox1.Text = htmlTool.GetHtml(@"http://www.digikey.com/product-detail/en/stmicroelectronics/UC3845BN/497-14808-5-ND/1852682");
-            richTextBox2.Text = htmlTool.GetData(richTextBox1.Text, "<meta itemprop=\"productID\" content=\"sku:", "\" />")[0];
-            richTextBox2.AppendText("\n" + htmlTool.GetData(richTextBox1.Text, "<span itemprop=\"name\">", "</span>")[0].Trim());
-            richTextBox2.AppendText("\n" + htmlTool.GetData(richTextBox1.Text, "<th>Manufacturer Part Number</th>\n                                <td>\n", "\n")[0].Trim());
-            richTextBox2.AppendText("\n" + htmlTool.GetData(richTextBox1.Text, "<td itemprop=\"description\">\n", "\n")[0].Trim());
-            richTextBox2.AppendText("\n" + htmlTool.GetData(richTextBox1.Text, "<span itemprop=\"name\">", "</span>")[0]);
-            richTextBox2.AppendText("\n" + htmlTool.GetData(richTextBox1.Text, "<span itemprop=\"name\">", "</span>")[0]);
-            richTextBox2.AppendText("\n" + htmlTool.GetData(richTextBox1.Text, "<span itemprop=\"name\">", "</span>")[0]);
-            richTextBox2.AppendText("\n" + htmlTool.GetData(richTextBox1.Text, "<span itemprop=\"name\">", "</span>")[0]);
-            richTextBox2.AppendText("\n" + htmlTool.GetData(richTextBox1.Text, "<span itemprop=\"name\">", "</span>")[0]);
-            richTextBox2.AppendText("\n" + htmlTool.GetData(richTextBox1.Text, "<span itemprop=\"name\">", "</span>")[0]);
+            string html, temp;
+           
+            html = htmlTool.GetHtml(textBox1.Text.Trim());
+
+            richTextBox1.Text = html;
+            richTextBox2.Text = "Digi - Key Part Number: " + htmlTool.GetData(richTextBox1.Text, "<meta itemprop=\"productID\" content=\"sku:", "\" />")[0];
+            richTextBox2.AppendText("\nManufacturer: " + htmlTool.GetData(richTextBox1.Text, "<span itemprop=\"name\">", "</span>")[0].Trim());
+            richTextBox2.AppendText("\nManufacturer Part Number: " + htmlTool.GetData(richTextBox1.Text, "<th>Manufacturer Part Number</th><td>", "</td>")[0].Trim());
+            richTextBox2.AppendText("\nDescription: " + htmlTool.GetData(richTextBox1.Text, "<td itemprop=\"description\">", "</td>")[0].Trim());
+            richTextBox2.AppendText("\nManufacturer Standard Lead Time: " + htmlTool.GetData(richTextBox1.Text, "<th>Manufacturer Standard Lead Time</th><td><span>", "</span>")[0]);
+            richTextBox2.AppendText("\nDetailed Description: " + htmlTool.GetData(richTextBox1.Text, "<h3 itemprop=\"description\">", "</h3>")[0]);
+            temp = htmlTool.GetData(richTextBox1.Text, "<td class=\"attributes-td-categories-link\">", "</a>")[0];
+            temp = temp.Remove(temp.IndexOf("<"), temp.IndexOf(">") + 1);
+            richTextBox2.AppendText("\nCategories: " + temp);
+            temp = htmlTool.GetData(richTextBox1.Text, "<td class=\"attributes-td-categories-link\">", "</a>")[1];
+            temp = temp.Remove(temp.IndexOf("<"), temp.IndexOf(">") + 1);
+            richTextBox2.AppendText("\n" + temp);
+            richTextBox2.AppendText("\nOperating Temperature: " + htmlTool.GetData(richTextBox1.Text, "<th>Operating Temperature</th><td>", "</td>")[0]);
+            richTextBox2.AppendText("\nMounting Type: " + htmlTool.GetData(richTextBox1.Text, "<th>Mounting Type</th><td>", "</td>")[0]);
+            richTextBox2.AppendText("\nPackage / Case: " + htmlTool.GetData(richTextBox1.Text, "<th>Package / Case</th><td>", "</td>")[0]);
+            richTextBox2.AppendText("\nSupplier Device Package: " + htmlTool.GetData(richTextBox1.Text, "<th>Supplier Device Package</th><td>", "</td>")[0]);
         }
     }
 }
